@@ -1,0 +1,81 @@
+body
+{
+    background-color: rgb(30, 32, 43);
+}
+
+.nav-tabs {
+    border: none;
+    padding: 10px;
+}
+
+.search{
+ margin-left: 20%;
+}
+
+
+ .header{
+     height: 350px;
+        background-image: url(../images/banner.png), linear-gradient(#1e202b, #1e202b);
+        background-size: cover;
+        background-position: center center;
+      }
+     
+
+
+ .home{
+    margin-top: 10rem;
+ }
+
+
+
+.form-control{
+    background-color:rgb(30, 32, 43) ;
+    width: 50% !important;
+    flex: none !important;
+}
+
+
+
+.forecast-content{
+    height: 250px;
+}
+
+
+
+.footer-content{
+    margin-top: 15rem;
+    background-color: #0b0c17;
+    width: 100%;
+}
+
+
+
+.input-group{
+    margin-top: 5rem;
+}
+
+
+.social{
+    margin-top: 8rem;
+}
+
+
+.social a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    transition: all 0.3s;
+    font-size: 20px;
+    margin-left: 10px;
+    }
+    
+    
+    .social a:hover{
+    color: white;
+    background-color: rgb(27, 0, 136);
+    }

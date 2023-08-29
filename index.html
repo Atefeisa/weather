@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary  pt-5 ">
+
+    <div class="container">
+      <a href="">
+        <img src="images/logo2x.png" alt="Weather-logo" style="width: 50px;">
+      </a>
+
+      <div class="d-flex flex-column mx-2">
+        <a class="navbar-brand mx-2 text-white" href="#">Weather</a>
+        <a href="" class="text-decoration-none"> <small class="text-muted ">tagline goes here</small> </a>
+      </div>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+        <ul class="nav nav-tabs ms-auto  mb-2 mb-lg-0 px-5  ">
+
+
+          <li class="nav-item mx-3">
+            <a class="nav-link active text-info rounded-5 bg-transparent border-info" aria-current="page"
+              href="#">Home</a>
+          </li>
+
+
+
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white rounded-5 px-3" href="#">News</a>
+          </li>
+
+
+
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white rounded-5 px-3" href="#">Live cameras</a>
+          </li>
+
+
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white rounded-5 px-3" href="#">photos</a>
+          </li>
+
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white rounded-5 px-3" href="#">contact</a>
+          </li>
+
+          </li>
+        </ul>
+
+      </div>
+  </nav>
+
+
+
+
+  <div class="header ">
+
+
+    <div class="input-group w-100  container p-5 search">
+      <input type="text" id="search" class="form-control rounded-5 border-0 mt-5 py-2"
+        placeholder="find your location..">
+      <button class="btn btn-danger  rounded-pill mx-3 mt-5 px-4 fs-4" type="button">Find</button>
+    </div>
+
+
+
+
+
+    <div class="container-md w-75 m-auto mt-5 home">
+
+      <div class="row g-0">
+
+        <div class="col-md-4 col-sm-6">
+
+          <div class="forecast-header ">
+
+            <div class="d-flex justify-content-between p-2 bg-danger text-white">
+              <span id="todayName"> Sturday</span>
+              <div>
+                <span id="todayNum">26</span>
+                <span id="todayMonth"> August</span>
+              </div>
+
+            </div>
+
+            <div class="forecast-content text-white bg-black  bg-opacity-75 ">
+
+              <h3 id="todayLocation" class="p-3">Cairo</h3>
+
+              <div class="num text-white px-5 fs-1">
+
+                <span id="todayTemp"> 26 </span> <sup>o</sup> C
+
+                <img id="todayImg" src="https://cdn.weatherapi.com/weather/64x64/night/113.png" class="ms-3 w-25"
+                  alt="">
+
+              </div>
+
+              <p id="todayCondition" class="text-info px-3 ">clear</p>
+
+              <div class="d-flex justify-content-around mt-4 pb-2">
+
+                <span>
+
+                  <i class="fa-solid fa-umbrella" style="color: gray;"></i>
+                  <span id="humidity"> 20% </span>
+
+                </span>
+
+                <span>
+
+                  <i class="fa-solid fa-wind" style="color: gray;"></i>
+                  <span id="wind">18km/h</span>
+                </span>
+
+                <span>
+
+                  <i class="fa-solid fa-compass" style="color: gray;"></i>
+                  <span id="windDirection">East</span>
+                </span>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-md-4 col-sm-6">
+
+          <div class="forecast-header text-center">
+            <p class="tommorowName text-white m-auto bg-danger bg-opacity-75 p-2">Sunday</p>
+          </div>
+
+          <div
+            class="forecast-content m-auto p-2 bg-black bg-opacity-50 d-flex flex-column justify-content-between align-items-center px-5">
+
+            <div class="mb-1 px-5">
+              <img class="tommorowImg" src="    https://cdn.weatherapi.com/weather/64x64/day/113.png " alt="">
+            </div>
+
+            <div class="text-white fs-1 px-5">
+
+              <span class="maxTemp"> 37 </span> <sup>o</sup> c
+
+            </div>
+
+            <div class="text-white px-5 ">
+
+              <span class="minTemp"> 26.6</span> <sup>o</sup> c
+
+            </div>
+            <P class="text-info mt-4 px-5 tommorowCondition">sunny</P>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-md-4 col-sm-6">
+
+          <div class="forecast-header text-center ">
+            <p class="tommorowName text-white m-auto bg-danger bg-opacity-75 p-2">Monday</p>
+          </div>
+
+          <div
+            class="forecast-content m-auto p-2 bg-black bg-opacity-75 d-flex flex-column justify-content-between align-items-center px-5">
+
+            <div class="mb-1 px-5">
+              <img class="tommorowImg" src="    https://cdn.weatherapi.com/weather/64x64/day/113.png " alt="">
+            </div>
+            <div class="text-white fs-1 px-5">
+              <span class="maxTemp"> 35 </span> <sup>o</sup> c
+            </div>
+            <div class="text-white px-5 ">
+              <span class="minTemp"> 25 </span> <sup>o</sup> c
+            </div>
+            <P class="text-info mt-4 px-5 tommorowCondition">sunny</P>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <footer class=" footer-content ">
+
+      <div class="row g-0">
+        <div class="col-md-8">
+          <div class="input-group container-md  mx-5 py-5 ">
+            <input type="text" class="form-control  rounded-5 border-0 mt-5 py-2"
+              placeholder="Enter your email to subscribe..">
+            <button class="btn btn-info  rounded-pill mx-3 mt-5 px-4 fs-6" type="button">Subscribe</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="social  py-5  d-flex flex-row justify-content-center align-items-center">
+
+            <a href="https://twitter.com/"> <i class="fa-brands fa-twitter"></i> </a>
+            <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i> </a>
+            <a href="https://dribbble.com/"> <i class="fa-brands fa-dribbble"></i> </a>
+            <a href="https://www.pinterest.com/"> <i class="fa-brands fa-pinterest"></i> </a>
+
+          </div>
+
+
+        </div>
+
+        <div class="col-md-8">
+          <p class="text-white mx-5 mt-3"> Copyright 2014 Company name. Designed by Themezy. All rights reserved </p>
+        </div>
+
+      </div>
+    </footer>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
